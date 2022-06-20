@@ -45,6 +45,7 @@ const loopGame = setInterval(()=>{
         audio.src = "./audio/game-over.wav";
         audio.type = "audio/wav";
         audio.play();
+        document.getElementById('player').removeAttribute('loop');
         
         
     } else if(pokeballPosition == 0){   //contador de pontos                        
