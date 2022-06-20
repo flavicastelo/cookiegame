@@ -127,3 +127,21 @@ a:hover{
         bottom: 0px;
     }
 }
+
+#player{
+    display: none;
+}
+.container-audio{
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    padding: 2px;
+}
+.botao-audio{
+    color: #FFF;
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+}
+.botao-audio:hover{
+    color: #424242;
+}
