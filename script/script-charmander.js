@@ -2,6 +2,7 @@ const pikachu = document.querySelector(".pikachu");
 const pokeball = document.querySelector(".pokeball");
 const pokeLife = document.querySelector(".poke-life");
 const continuar = document.querySelector(".continue-flag");
+const audio = document.querySelector("#player");
 var qtd = 0;
 var count = 0;
 
@@ -36,17 +37,21 @@ const loopGame = setInterval(()=>{
         pokeLife.style.display = 'none';            
 
         clearInterval(loopGame);
+
         continuar.classList.remove('continue-flag');
         continuar.classList.add('continue');
+        
+        document.getElementById('player').pause();
+        audio.src = "./audio/game-over.wav";
+        audio.type = "audio/wav";
+        audio.play();
+        
         
     } else if(pokeballPosition == 0){   //contador de pontos                        
         count++;
         document.querySelector('.count').innerHTML = count;
     }  
-    
-    // for (let i=0; i < 6; i++) {
-    // document.location.reload(true);
-    // }
+   
 }, 10);
 
 document.addEventListener("keydown", jump); //adiciona o evento, (tecla, funcao) [keydown = qualquer tecla]
