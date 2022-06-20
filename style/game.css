@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+.game{
+    width: 100%;
+    height: 80vh;
+    border-bottom: 100px solid #18ae18;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /*esconder o que passar da tela*/
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #87CEEB;
+    align-items: center;
+    padding: 30px;
+    height: 20vh;
+}
+.score{
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+}
+
+.count{
+    border: 2px solid #FFF;    
+    border-radius: 8px;
+    color: #FFF;
+    width: 100px;
+    height: 70px;    
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
+}
+
+.poke-life{
+    margin: 20px 0;
+    width: 20px;    
+}
+.continue-flag{
+    display: none;
+}
+.continue {
+    width: 300px;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    text-align: center;
+    margin: 30vh auto;   
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+.continue:hover{
+    border: 2px solid #424242;
+}
+
+a:hover{
+    color: #424242;
+}
+
+.pokeball{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: poke-animation 3s infinite linear;
+}
+
+.pikachu{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump-pikachu{
+    animation: pikachu-animation 500ms ease-out; /*pulo do pikachu*/
+}
+
+.clouds{
+    position: absolute;
+    width: 300px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+@keyframes poke-animation {
+    from {
+        right: -80px; /* Para ele começar de fora da tela*/
+    }
+    to{
+        right: 100%;
+    }
+}
+@keyframes clouds-animation {
+    from{
+        right: -300px;
+    }
+    to{
+        right: 100%;
+    }
+}
+@keyframes pikachu-animation {
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    70%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
