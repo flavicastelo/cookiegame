@@ -11,16 +11,16 @@ a{
 .game{
     width: 100%;
     height: 80vh;
-    border-bottom: 100px solid #18ae18;
+    border-bottom: 100px solid #E8E08B;
     margin: 0 auto;
     position: relative;
     overflow: hidden; /*esconder o que passar da tela*/
-    background: linear-gradient(#87CEEB, #E0F6FF);
+    background: linear-gradient(#86DBF0, #96E2D8);
 }
 .nav{
     display: flex;
     justify-content: space-between;
-    background-color: #87CEEB;
+    background-color: #86DBF0;
     align-items: center;
     padding: 30px;
     height: 20vh;
@@ -43,9 +43,9 @@ a{
     font-size: 50px;
 }
 
-.poke-life{
+.candy-life{
     margin: 20px 0;
-    width: 20px;    
+    width: 40px;    
 }
 .continue-flag{
     display: none;
@@ -68,30 +68,32 @@ a:hover{
     color: #424242;
 }
 
-.pokeball{
+.candy{
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: poke-animation 3s infinite linear;
+    animation: candy-animation 3s infinite linear;
 }
 
-.pikachu{
+.cookie{
     width: 150px;
     position: absolute;
     bottom: 0;
 }
 
-.jump-pikachu{
-    animation: pikachu-animation 500ms ease-out; /*pulo do pikachu*/
+.jump-cookie{
+    animation: cookie-animation 500ms ease-out; /*pulo do cookie*/
 }
 
 .clouds{
     position: absolute;
-    width: 300px;
+    width: 600px;
     animation: clouds-animation 20s infinite linear;
 }
 
-@keyframes poke-animation {
+
+
+@keyframes candy-animation {
     from {
         right: -80px; /* Para ele começar de fora da tela*/
     }
@@ -101,13 +103,14 @@ a:hover{
 }
 @keyframes clouds-animation {
     from{
-        right: -300px;
+        right: -600px;
     }
     to{
         right: 100%;
     }
 }
-@keyframes pikachu-animation {
+
+@keyframes cookie-animation {
     0%{
         bottom: 0;
     }

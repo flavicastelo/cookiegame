@@ -1,40 +1,40 @@
-const pikachu = document.querySelector(".pikachu");
-const pokeball = document.querySelector(".pokeball");
-const pokeLife = document.querySelector(".poke-life");
+const cookie = document.querySelector(".cookie");
+const candy = document.querySelector(".candy");
+const candyLife = document.querySelector(".poke-life");
 const continuar = document.querySelector(".continue-flag");
 const audio = document.querySelector("#player");
 var qtd = 0;
 var count = 0;
 
 const jump = () => {
-    pikachu.classList.add('jump-pikachu'); //add a class jump dentro da class do selector pikachu     
+    cookie.classList.add('jump-cookie'); //add a class jump dentro da class do selector cookie     
    
     setTimeout( () => {
-        pikachu.classList.remove("jump-pikachu");
+        cookie.classList.remove("jump-cookie");
     }, 500); //remove a classe jump depois de 500ms [500 é o tempo usado na classe do pulo]
    
 };
 
 //vai repetir a execução da função de tempos em tempos
 const loopGame = setInterval(()=>{
-    const pokeballPosition = pokeball.offsetLeft;
-    const pikachuPosition = +window
-    .getComputedStyle(pikachu)
+    const candyPosition = candy.offsetLeft;
+    const cookiePosition = +window
+    .getComputedStyle(cookie)
     .bottom.replace("px", "");       
     qtd++;
-    if(pokeballPosition <= 120 && pokeballPosition > 0 && pikachuPosition < 80){
-        pokeball.style.animation = "none";
-        pokeball.style.left = `${pokeballPosition}px`;
+    if(candyPosition <= 120 && candyPosition > 0 && cookiePosition < 80){
+        candy.style.animation = "none";
+        candy.style.left = `${candyPosition}px`;
     
-        pikachu.style.animation = "none";
-        pikachu.style.bottom = `${pikachuPosition}px`;
+        cookie.style.animation = "none";
+        cookie.style.bottom = `${cookiePosition}px`;
     
-        pikachu.src = "./img/charmander-over.png";
-        pikachu.style.width = "150px";
-        pikachu.style.marginLeft = "45px";
+        cookie.src = "./img/cookie-girl-over.png";
+        cookie.style.width = "150px";
+        cookie.style.marginLeft = "45px";
         
         //tirar vida quando perde
-        pokeLife.style.display = 'none';            
+        candyLife.style.display = 'none';            
 
         clearInterval(loopGame);
 
@@ -48,7 +48,7 @@ const loopGame = setInterval(()=>{
         document.getElementById('player').removeAttribute('loop');
         
         
-    } else if(pokeballPosition == 0){   //contador de pontos                        
+    } else if(candyPosition == 0){   //contador de pontos                        
         count++;
         document.querySelector('.count').innerHTML = count;
     }  
