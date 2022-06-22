@@ -1,12 +1,18 @@
+@font-face {
+    font-family: 'Pixeled';
+    src: url('./font/Pixeled.ttf');
+}
+  
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body{
-    background-color: #a5c2ee;
-    font-family:  'Titillium Web', sans-serif;
+    background-color: #d3ba4b;
+    font-family: 'Pixeled', 'Titillium Web', sans-serif;
 }
 
 a{
@@ -36,7 +42,7 @@ a{
     width: 600px;
     height: 400px;
     background-color: #FFFFFF;
-    border: 30px solid #424242;
+    border: 30px solid #5a2a03;
     border-radius: 10px;
     margin: 20px;
     display: block;
@@ -56,7 +62,7 @@ a{
 }
 
 .right{
-    background-color:  #F1CF38;
+    background-color:  #DBAF4B;
     height: 500px;
     width: 200px;
     border-radius: 0 10px 10px 0;
@@ -88,7 +94,7 @@ a{
     font-size: 16px;
     text-align: justify;
     padding: 15px;
-    border: 2px solid #E8E08B;
+    border: 2px solid  #d3ba4b;
     background: #E8E08B;
     margin: 10px;
     height: 167px;
@@ -103,7 +109,7 @@ a{
 
 .vertical{        
     position: absolute;
-    background-color: #DDDCDC;
+    background-color: #783700;
     width: 30px;
     height: 90px;
     border-radius: 8px;    
@@ -111,19 +117,19 @@ a{
 
 .horizontal{    
     position: absolute;
-    background-color: #DDDCDC;
+    background-color: #783700;
     width: 90px;
     height: 30px;
     border-radius: 8px;   
 }
 
 i{
-    color: #B0B0B0;
+    color: #b15f1c;
    
 }
 
 i:hover{
-    color:#424242;
+    color:#E8E08B;
 }
 
 .icones-h{
@@ -155,16 +161,17 @@ i:hover{
 .botao{
     width: 70px;
     height: 25px;
-    background-color: #B0B0B0;
+    background-color: #b15f1c;
+    border: 2px outset #b15f1c ;
     border-radius: 8px;    
     color: #FFF;
     text-transform:uppercase;
     text-align: center;
-    padding: 4px;
+    padding: 2px;
     margin-top: 40px;  
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px -1px rgba(117,117,117,0);
+    box-shadow: 0px 10px 13px -7px #494848, 5px 5px 5px -1px rgba(117,117,117,0);
 }
 
 .botao:hover{
-    color: #424242;
+    color: #5a2a03;
 }
