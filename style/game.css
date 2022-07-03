@@ -47,11 +47,14 @@ a{
     display: none;
 }
 .container-botoes{
+    width: 50vw;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 150px auto;
+    top: 25vh;
+    left: 25vw;
 }
 .inicio, .continue {
     width: 120px;
@@ -84,6 +87,7 @@ a{
     padding: 2px;
     background-color: #d3ba4b;
     border: 4px outset #d3ba4b;
+    z-index: 2;
 }
 .botao-audio{
     color: #783700;
