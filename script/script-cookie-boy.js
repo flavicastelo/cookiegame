@@ -1,6 +1,5 @@
 const cookie = document.querySelector(".cookie");
 const candy = document.querySelector(".candy");
-const candyLife = document.querySelector(".candy-life");
 const voltarInicio = document.querySelector(".inicio-flag");
 const continuar = document.querySelector(".continue-flag");
 const audio = document.querySelector("#player");

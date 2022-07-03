@@ -1,6 +1,6 @@
 const cookie = document.querySelector(".cookie");
 const candy = document.querySelector(".candy");
-const candyLife = document.querySelector(".candy-life");
+const voltarInicio = document.querySelector(".inicio-flag");
 const continuar = document.querySelector(".continue-flag");
 const audio = document.querySelector("#player");
 var qtd = 0;
@@ -32,12 +32,11 @@ const loopGame = setInterval(()=>{
         cookie.src = "./img/cookie-girl-over.png";
         cookie.style.width = "150px";
         cookie.style.marginLeft = "45px";
-        
-        //tirar vida quando perde
-        candyLife.style.display = 'none';            
 
         clearInterval(loopGame);
 
+        voltarInicio.classList.remove('inicio-flag');
+        voltarInicio.classList.add('inicio');
         continuar.classList.remove('continue-flag');
         continuar.classList.add('continue');
         

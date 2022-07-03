@@ -43,10 +43,6 @@ a{
     font-size: 50px;
 }
 
-.candy-life{
-    margin: 20px 0;
-    width: 40px;    
-}
 .inicio-flag, .continue-flag{
     display: none;
 }
