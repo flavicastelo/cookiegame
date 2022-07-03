@@ -47,26 +47,33 @@ a{
     margin: 20px 0;
     width: 40px;    
 }
-.continue-flag{
+.inicio-flag, .continue-flag{
     display: none;
 }
-.continue {
+.container-botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25vh auto;
+}
+.inicio, .continue {
     width: 300px;
+    color: white;
+    background-color: transparent;
     border: 2px solid #FFF;
     border-radius: 8px;
-    text-align: center;
-    margin: 30vh auto;   
+    text-align: center;    
     font-size: 30px;
     font-weight: bold;    
+    margin-bottom: 5px;
 }
 
-.continue:hover{
+.inicio:hover, .continue:hover{
     border: 2px solid #424242;
-}
-
-a:hover{
     color: #424242;
 }
+
 
 .candy{
     position: absolute;

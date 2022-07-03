@@ -21,16 +21,14 @@
             <button class="botao-audio" onclick="document.getElementById('player').play()"><i class="bi bi-volume-up-fill"></i></button>
 	        <button class="botao-audio" onclick="document.getElementById('player').pause()"><i class="bi bi-volume-mute-fill"></i></button>
         </div>
-        <div id="life" class="lifes">
-            <img src="./img/candy-life.png" alt="candy life" class="candy-life">
-            <img src="./img/candy-life.png" alt="candy life" class="candy-life">
-            <img src="./img/candy-life.png" alt="candy life" class="candy-life">
-            <img src="./img/candy-life.png" alt="candy life" class="candy-life">
-            <img src="./img/candy-life.png" alt="candy life" class="candy-life">                                  
-        </div>
+       
     </header>
     <div class="game">
-        <div class="continue-flag"><a href="./index.html">Tentar Novamente</a></div>
+        <div class="container-botoes">
+            <button onclick="window.location.reload()" class="continue-flag">Tentar Novamente</button>
+            <button onclick="window.location.href = './index.html'" class="inicio-flag">Voltar ao Início</button>
+            
+        </div>
         <img src="./img/clouds.png" alt="nuvens" class="clouds">
         <img src="./img/cookie-boy.gif" alt="cookie correndo" class="cookie">
         <img src="./img/candy4.png" alt="candy" class="candy">
