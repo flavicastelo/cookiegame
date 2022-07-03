@@ -6,7 +6,7 @@
 
 a{
     text-decoration: none;
-    color: #FFF;
+    color: #783700;
 }
 .game{
     width: 100%;
@@ -26,16 +26,16 @@ a{
     height: 20vh;
 }
 .score{
-    color: #FFF;
+    color: #783700;
     text-transform: capitalize;
     font-size: 20px;
     text-align: center;
 }
 
 .count{
-    border: 2px solid #FFF;    
+    border: 2px solid #783700;    
     border-radius: 8px;
-    color: #FFF;
+    color: #783700;
     width: 100px;
     height: 70px;    
     text-align: center;
@@ -50,26 +50,51 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 25vh auto;
+    flex-direction: row;
+    margin: 150px auto;
 }
 .inicio, .continue {
-    width: 300px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid #FFF;
+    width: 120px;
+    height: 60px;
+    color: #783700;
+    background-color: #d3ba4b;
+    border: 4px outset #d3ba4b;
     border-radius: 8px;
     text-align: center;    
-    font-size: 30px;
+    font-size: 14px;
     font-weight: bold;    
-    margin-bottom: 5px;
+    margin: 5px;
+    padding: 5px;
 }
 
-.inicio:hover, .continue:hover{
-    border: 2px solid #424242;
-    color: #424242;
+.inicio:hover, .continue:hover, .botao-audio:hover{
+    border: 2px inset #d3ba4b;
+    color: #783700;
 }
 
+#player{
+    display: none;
+}
+.container-audio{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 2px;
+    background-color: #d3ba4b;
+    border: 4px outset #d3ba4b;
+}
+.botao-audio{
+    color: #783700;
+    background-color: transparent;
+    border: 2px solid #d3ba4b;
+    font-size: 30px;
+}
+.botao-audio:hover{
+    border: 2px inset #bea326;
+    color: #783700;
+}
 
 .candy{
     position: absolute;
@@ -132,22 +157,4 @@ a{
     100%{
         bottom: 0px;
     }
-}
-
-#player{
-    display: none;
-}
-.container-audio{
-    border: 2px solid #FFF;
-    border-radius: 8px;
-    padding: 2px;
-}
-.botao-audio{
-    color: #FFF;
-    background-color: transparent;
-    border: 0;
-    font-size: 30px;
-}
-.botao-audio:hover{
-    color: #424242;
 }

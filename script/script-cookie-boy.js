@@ -3,7 +3,7 @@ const candy = document.querySelector(".candy");
 const voltarInicio = document.querySelector(".inicio-flag");
 const continuar = document.querySelector(".continue-flag");
 const audio = document.querySelector("#player");
-var qtd = 0;
+
 var count = 0;
 
 const jump = () => {
@@ -21,7 +21,7 @@ const loopGame = setInterval(()=>{
     const cookiePosition = +window
     .getComputedStyle(cookie)
     .bottom.replace("px", "");       
-    qtd++;
+
     if(candyPosition <= 120 && candyPosition > 0 && cookiePosition < 80){
         candy.style.animation = "none";
         candy.style.left = `${candyPosition}px`;
