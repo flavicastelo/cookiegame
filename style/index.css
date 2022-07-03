@@ -175,3 +175,15 @@ i:hover{
 .botao:hover{
     color: #5a2a03;
 }
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #5a2a03;
+    font-size: 10px;
+}
+article a{
+    text-decoration: none;
+    color: #FFF;
+}
